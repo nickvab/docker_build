@@ -1,0 +1,8 @@
+services:
+  my_app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: port_listener
+    ports:
+      - "8484:8484"
